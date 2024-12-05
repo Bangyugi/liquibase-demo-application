@@ -3,10 +3,13 @@
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                                        https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
-<include file="db/changelog/sql/create-user.sql"/>
-    <include file="db/changelog/sql/insert-user.sql"/>
-    <include file="db/changelog/sql/add-address-column.sql"/>
-    <include file="/db/changelog/sql/update-address.sql"    />
-    <include file="/db/changelog/sql/update-phone-number.sql"    />
+
+    <include file="db/changelog/v1.0.1/create-user-table.xml"/>
+    <include file="/db/changelog/sql/update-user.sql"/>
+    <include file="db/changelog/v1.0.1/rename-user-id.xml"/>
+    <include file="db/changelog/v1.0.1/add-phone-number-column.xml"/>
+    <include file="/db/changelog/sql/update-phone-number.sql"/>
+    <include file="db/changelog/v1.0.1/add-address-column.xml"/>
+    <include file="/db/changelog/sql/update-address.sql"/>
 
 </databaseChangeLog>
