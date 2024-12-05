@@ -1,3 +1,5 @@
+--liquibase formatted sql
+--changeset bangvan:insert_address
 UPDATE users
 SET address = '123 Main St, HCM City'
 WHERE user_id = 1;
