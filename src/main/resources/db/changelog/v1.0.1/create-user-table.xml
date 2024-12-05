@@ -12,7 +12,7 @@
             <column name="first_name" type="varchar(50)"/>
             <column name="last_name" type="varchar(50)"/>
             <column name="email" type="varchar(50)"/>
-            <column name="password" type="varchar(50) collate 'utf8_bin'"/>
+            <column name="password" type="varchar(50)"/>
             <column name="username" type="varchar(50)"/>
         </createTable>
     </changeSet>
